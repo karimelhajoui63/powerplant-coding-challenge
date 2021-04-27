@@ -3,6 +3,7 @@ from logging.handlers import RotatingFileHandler
 from time import strftime
 import traceback
 import logging
+import os
 
 from powerplant import PowerPlant
 from algo import Algo
@@ -78,6 +79,8 @@ def exceptions(e):
 
 
 if __name__ == "__main__":
+    if not os.path.exists('log'):
+        os.makedirs('log')
     handler = RotatingFileHandler('log/api.log', maxBytes=10000, backupCount=3)        
     logger = logging.getLogger(__name__)
     logger.setLevel(logging.ERROR)

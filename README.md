@@ -1,4 +1,4 @@
-# Powerplant coding challenge
+# Powerplant coding challenge
 
 This is my submission for the [powerplant-coding-challenge](https://github.com/gem-spaas/powerplant-coding-challenge).
 The original README.md was moved to [doc/README.md](doc/README.md).
@@ -8,7 +8,7 @@ The original README.md was moved to [doc/README.md](doc/README.md).
 
 This guide assumes that you are working with a Unix command line, and that you have already install Python (minimal version : 3.6)
 
-## Setup
+## Setup
 
 Clone the repository from github and enter the project directory:
 
@@ -27,7 +27,7 @@ Install the minimum requirements:
 `pip install -r requirements.txt`
 
 
-## How to run
+## How to run
 
 
 Host the server locally:
@@ -47,6 +47,6 @@ You can also submit a chosen payload by using the following CURL command:
 `curl -X POST -d @test/example_payloads/payload1.json -H "Content-Type: application/json" http://localhost:8888/productionplan`
 
 
-## Logging
+## Logging
 
 Every request and every error is logged in [log/api.log](log/api.log).
